@@ -1,0 +1,112 @@
+= Background
+
+This is the hydrology gauge stations downloaded for an area near where I grew up in  NY. I used to play and fish and these rivers so I thought it would be nice to look at this data.
+
+== Locations
+
+
+|===
+|Agency |ID |Name
+
+|USGS
+|01376800
+|HACKENSACK RIVER AT WEST NYACK NY
+
+|USGS
+|01377370
+|Pascack Brook at Park Ridge NJ
+
+|USGS
+|01387400
+|RAMAPO RIVER AT RAMAPO NY
+
+|USGS
+|01387420	|
+|RAMAPO RIVER AT SUFFERN NY
+
+|USGS
+|01387450
+|Mahwah River near Suffern NY
+
+|USGS
+|01387500
+|Ramapo River near Mahwah NJ
+
+|USGS
+|01390450
+|Saddle River at Upper Saddle River NJ
+
+|USGS
+|410155074060201	030289--
+|Saddle River 17 Obs (THIS IS A WELL)
+|===
+
+
+== Problems I have seen
+
+Some rows have estimated values - but also some are provisional and some are accepted. Estimated shows up as P:e or A:e
+
+There are variables numbers of items measured, so we can't always assume the same data is in the same column for each data set.
+
+The variables have different ID numbers so I am not sure if they represent the same thing
+
+There is EST (Eastern Standard Time) and EDT (Eastern Daylight savings time)
+
+There are gaps in the measured data, though it is always seem to be in the same
+
+
+
+
+== Solutions for Now
+
+I think I am going to split them each into a file and try to make sure at least the names of the variables are the same.
+
+The file name will be the same as the location
+
+I am going to drop USGS
+
+
+=== Metadata per ID
+
+File-format description:  http://help.waterdata.usgs.gov/faq/about-tab-delimited-output
+
+    Data provided for site 01376800
+#            TS   parameter     Description
+#        107226       00060     Discharge, cubic feet per second
+#        107227       00065     Gage height, feet
+#        107230       00065     Gage height, feet, [backup from well]
+
+    Data provided for site 01377370
+#            TS   parameter     Description
+#         98140       00065     Gage height, feet
+#         98141       00060     Discharge, cubic feet per second
+
+    Data provided for site 01387400
+#            TS   parameter     Description
+#        107231       00060     Discharge, cubic feet per second
+#        107232       00065     Gage height, feet
+
+    Data provided for site 01387420
+#            TS   parameter     Description
+#        107235       00060     Discharge, cubic feet per second
+#        107236       00065     Gage height, feet
+
+    Data provided for site 01387450
+#            TS   parameter     Description
+#         98301       00060     Discharge, cubic feet per second
+#         98302       00065     Gage height, feet
+
+    Data provided for site 01387500
+#            TS   parameter     Description
+#         98305       00060     Discharge, cubic feet per second
+#         98306       00065     Gage height, feet
+
+    Data provided for site 01390450
+#            TS   parameter     Description
+#         98436       00065     Gage height, feet
+#         98437       00060     Discharge, cubic feet per second
+#         98440       00021     Temperature, air, degrees Fahrenheit
+
+    Data provided for site 410155074060201
+#            TS   parameter     Description
+#         99557       72019     Depth to water level, feet below land surface
